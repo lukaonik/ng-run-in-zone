@@ -1,6 +1,6 @@
 {
   "name": "ng-run-in-zone",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "license": "MIT",
   "scripts": {
     "ng": "nx",
@@ -8,7 +8,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "commit": "cz"
+    "commit": "cz",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -53,11 +54,16 @@
     "nx": "13.10.6",
     "prettier": "^2.5.1",
     "ts-jest": "27.0.5",
-    "typescript": "~4.6.2"
+    "typescript": "~4.6.2",
+    "semantic-release": "^19.0.3"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukaonik/ng-run-in-zone.git"
   }
 }
