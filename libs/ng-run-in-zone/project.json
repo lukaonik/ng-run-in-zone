@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/ng-run-in-zone",
+  "sourceRoot": "libs/ng-run-in-zone/src",
+  "prefix": "ng-run-in-zone",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/ng-run-in-zone"],
+      "options": {
+        "project": "libs/ng-run-in-zone/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ng-run-in-zone/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ng-run-in-zone/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ng-run-in-zone"],
+      "options": {
+        "jestConfig": "libs/ng-run-in-zone/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ng-run-in-zone/src/**/*.ts",
+          "libs/ng-run-in-zone/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
