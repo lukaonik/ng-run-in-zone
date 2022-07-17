@@ -9,7 +9,7 @@
     "build": "nx build",
     "test": "nx test",
     "commit": "cz",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release --branches main"
   },
   "private": true,
   "dependencies": {
